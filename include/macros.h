@@ -1,0 +1,1 @@
+#define write std::cout
