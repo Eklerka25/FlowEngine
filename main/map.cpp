@@ -1,10 +1,17 @@
 #include <iostream>
 #include <macros.h>
 
-char map[80][25];
+#define WIDTH 80
+#define HEIGHT 25
+
+char map[WIDTH][HEIGHT];
 
 void overwrite_map(char value) {
-    map[x][y] = value;
+    for (int y = 0; y < HEIGHT; y++) {
+        for (int x = 0; x < WIDTH; x++) {
+            map[x][y] = value;
+        }
+    }
 }
 
 void draw(int x, int y, char value) {
@@ -12,9 +19,9 @@ void draw(int x, int y, char value) {
 }
 
 void dump_map() {
-    for (int y = 0; y < 10; y++) {
-        for (int x = 0; x < 10; x++) {
-            write << map[y][x];
+    for (int y = 0; y < HEIGHT; y++) {
+        for (int x = 0; x < WIDTH; x++) {
+            write << map[x][y];
         }
         write << "\n";
     }
