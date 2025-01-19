@@ -1,9 +1,9 @@
 #include <iostream>
 #include <conio.h>
 
-#include <init.h>
-#include <macros.h>
-#include <map.h>
+#include <init.hpp>
+#include <macros.hpp>
+#include <map.hpp>
 
 int main() {
     init();
