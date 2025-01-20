@@ -35,7 +35,7 @@ void draw_line(int x1, int y1, int x2, int y2, char value) {
     int err = dx - dy;
 
     while (1) {
-        map[y1][x1] = value;
+        map[x1][y1] = value;
 
         if (x1 == x2 && y1 == y2) break;
 
