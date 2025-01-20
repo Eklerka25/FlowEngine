@@ -1,10 +1,10 @@
 #include <iostream>
-#include <conio.h>
+#include <conio.hpp>
 
-#include <init.h>
-#include <macros.h>
-#include <map.h>
-#include <info.h>
+#include <init.hpp>
+#include <macros.hpp>
+#include <map.hpp>
+#include <info.hpp>
 
 int main() {
     init();
