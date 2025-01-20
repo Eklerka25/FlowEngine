@@ -1,5 +1,5 @@
 #include <iostream>
-#include <macros.hpp>
+#include <macros.h>
 
 #define WIDTH 80
 #define HEIGHT 25
@@ -19,11 +19,11 @@ void draw(int x, int y, char value) {
 }
 
 void dump_map() {
-    for (int y = 0; y < HEIGHT; y++) {
-        for (int x = 0; x < WIDTH; x++) {
+    for (int y = 0; y < 24; y++) {
+        for (int x = 0; x < 80; x++) {
             write << map[x][y];
         }
-        write << "\n";
+        write << std::endl;
     }
 }
 
@@ -49,4 +49,10 @@ void draw_line(int x1, int y1, int x2, int y2, char value) {
             y1 += sy;
         }
     }
+}
+
+void draw_polygon(int x1, int y1, int x2, int y2, int x3, int y3, char value) {
+    draw_line(x1, y1, x2, y2, value);
+    draw_line(x2, y2, x3, y3, value);
+    draw_line(x3, y3, x1, y1, value);
 }
