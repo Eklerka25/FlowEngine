@@ -1,5 +1,5 @@
 #include <iostream>
-#include <macros.h>
+#include <macros.hpp>
 
 #define WIDTH 80
 #define HEIGHT 25
