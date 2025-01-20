@@ -1,13 +1,22 @@
 #include <iostream>
 #include <conio.h>
 
-#include <init.hpp>
-#include <macros.hpp>
-#include <map.hpp>
+#include <init.h>
+#include <macros.h>
+#include <map.h>
+#include <info.h>
 
 int main() {
     init();
-    draw_line(1, 1, 5, 5, 'O');
-    dump_map();
+    overwrite_map(' ');
+    
+    while (true) {
+        system("cls");
+        dump_map();
+        overwrite_map(' ');
+        draw_polygon(3,3,7,3,7,10,'X');
+        system("timeout /t 0 /nobreak > nul");
+    }
+
     system("pause > nul");
 }
