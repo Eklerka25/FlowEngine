@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include <macros.h>
+#include <macros.hpp>
 
 void overwrite_map(char value);
 void draw(int x, int y, char value);
