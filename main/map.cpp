@@ -51,8 +51,14 @@ void draw_line(int x1, int y1, int x2, int y2, char value) {
     }
 }
 
+char get_pos_value(int x, int y) {
+    return map[x][y];
+}
+
 void draw_polygon(int x1, int y1, int x2, int y2, int x3, int y3, char value) {
     draw_line(x1, y1, x2, y2, value);
     draw_line(x2, y2, x3, y3, value);
     draw_line(x3, y3, x1, y1, value);
 }
+
+
